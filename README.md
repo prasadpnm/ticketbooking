@@ -37,43 +37,20 @@ Seat Assignment Order.
    -this method need to be executed at least once before reserve or hold the seats.
      1.SeatsAvailability.
      
-     curl -X GET \
-  http://localhost:2003/noOfSeatsAvlble \
-  -H 'Accept: application/json' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Content-Type: application/json' \
-  -H 'Postman-Token: 53514111-6beb-4844-812e-be971d886080' \
+     curl -X GET http://localhost:2003/noOfSeatsAvlble -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 53514111-6beb-4844-812e-be971d886080' 
   
   2. Seat finder.
   
-  curl -X POST \
-  http://localhost:2003/reservseats \
-  -H 'Accept: application/json' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Content-Type: application/json' \
-  -H 'Postman-Token: bc921be1-5c43-44c6-af6d-5e782518cbd7' \
-  -d '{
+    curl -X POST http://localhost:2003/reservseats -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: bc921be1-5c43-44c6-af6d-5e782518cbd7' -d '{
 	"numberOfSeats": 10,
-	"email" :"prasad199.msc@gmail.com"
-
-
-}'
+	"email" :"prasad199.msc@gmail.com"}'
 
 
 
-3. confirmSeat resrvation
+  3. confirmSeat resrvation
 
-curl -X POST \
-  http://localhost:2003/conformReservation \
-  -H 'Accept: application/json' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Content-Type: application/json' \
-  -H 'Postman-Token: 8dce3498-b7dd-43c9-bc71-4a8262525333' \
-  -d '{
-	"email" :"prasad1.msc@gmail.com"
-
-
-}'
+    curl -X POST  http://localhost:2003/conformReservation -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 8dce3498-b7dd-43c9-bc71-4a8262525333' -d '{
+	"email" :"prasad1.msc@gmail.com"}'
   
 
 
