@@ -34,7 +34,7 @@ Seat Assignment Order.
  API details  :
  
    
-   1.Seat Availability 
+   1.Seat Availability  -
    this method need to be executed at least once before reserve or hold the seats.
    
    
