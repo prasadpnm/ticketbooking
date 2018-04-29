@@ -31,11 +31,13 @@ Seat Assignment Order.
   9.in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
   
   
-  
-#API details 
+ API details  :
+ 
+   
+   1.Seat Availability 
    this method need to be executed at least once before reserve or hold the seats.
    
-    1.SeatsAvailability.
+   
      
      curl -X GET http://localhost:2003/noOfSeatsAvlble -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 53514111-6beb-4844-812e-be971d886080' 
   
