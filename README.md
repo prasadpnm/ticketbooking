@@ -20,15 +20,15 @@ Seat Assignment Order.
  
  Implementaion Details :
   
-  1.Rest API implemented using Spring boot modules(JPA,WEB and testing.)
-  2.Used H2 database in local mode. (this can be replaced with any enterprise level databases like mysql or postgress)
-  3.Seat allocation logic tested with Junit and spring boot test modules.
-  4.Client is implemented in java and integrated with maven phaces.
-  5. i used default program code for further development. right now it is hard coded for only one program.
-  6. logging is implemented default i configured java temp directory. it can be changed app properties file.
-  7.Global exception handling implemented for rest controller.
-  8.Spring JPA and JPA repositories is used to interact the H2 database.
-  9.in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
+ 1. Rest API implemented using Spring boot modules(JPA,WEB and testing.)
+ 2. Used H2 database in local mode. (this can be replaced with any enterprise level databases like mysql or postgress)
+ 3. Seat allocation logic tested with Junit and spring boot test modules.
+ 4. Client is implemented in java and integrated with maven phaces.
+ 5. i used default program code for further development. right now it is hard coded for only one program.
+ 6. logging is implemented default i configured java temp directory. it can be changed app properties file.
+ 7. Global exception handling implemented for rest controller.
+ 8. Spring JPA and JPA repositories is used to interact the H2 database.
+ 9. in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
   
   
  API details  :
