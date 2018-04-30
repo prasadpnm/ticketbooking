@@ -41,7 +41,7 @@ Seat Assignment Order.
 
 1. First it will try to allocate all the seats continiosly and close to venue.
     -if the group size is more than half of a row size. it will try to allocate seats from left to right in first available     row.
-    -if the group size is small it first allocate seats from middle to left, once first half of the row filled then it will fill second half from middle to right.
+    -if the group size is small, it first allocate seats from middle to left, once first half of the row filled then it will fill second half from middle to right.
  2. if the seats not available continiously in any of the row's then it will start allocate the seats in multiple rows     starting from  first row to last row.
  
  
@@ -49,12 +49,13 @@ Seat Assignment Order.
   
  1. Rest API implemented using Spring boot modules(JPA,WEB and testing.)
  2. Used H2 database in local mode. (this can be replaced with any enterprise level databases like mysql or postgress)
- 3. Seat allocation logic tested with Junit and spring boot test modules.
- 4. i used default program code for further development. right now it is hard coded for only one program.
- 5. logging is implemented default i configured java temp directory. it can be changed app properties file.
- 6. Global exception handling implemented for rest controller.
- 7. Spring JPA and JPA repositories is used to interact the H2 database.
- 8. in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
+ 3. Data base is prepopulated with seating capacity of 700 Seats in 20 rows and 35 columns. programs table one test row inserted.
+ 4. Seat allocation logic tested with Junit and spring boot test modules.
+ 5. i used default program code for further development. right now it is hard coded for only one program.
+ 6. logging is implemented default i configured java temp directory. it can be changed app properties file.
+ 7. Global exception handling implemented for rest controller.
+ 8. Spring JPA and JPA repositories is used to interact the H2 database.
+ 9. in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
   
 this solution right now works using client email id as key,so at any given time one customer can hold only one request.this can be replaced using session Id as key.
 
