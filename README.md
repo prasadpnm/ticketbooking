@@ -6,12 +6,12 @@ Setup Instructions.
  2. cd ticketbooking 
  3. mvn clean install
  4. update the src/main/resources/application.properties file 
-      update the 'C:/Users/prasa/Documents/GitHub' with your local path where you are executing git clone command. 
+      update the database path property 'C:/Users/prasa/Documents/GitHub' with your local path from where you are executing git clone command. 
       https://github.com/prasadpnm/ticketbooking/blob/master/src/main/resources/application.properties#L17
   
  5. mvn spring-boot:run
  6. open another terminal window and execute the curl commands as below.
- 7. you can find log files java temp directory. you can change the location by updating below property.
+ 7. you can find log files in java temp directory, you can change the location by updating below property.
     https://github.com/prasadpnm/ticketbooking/blob/master/src/main/resources/application.properties#L6
 
   
@@ -24,14 +24,14 @@ Setup Instructions.
      
      curl -X GET http://localhost:2003/noOfSeatsAvlble -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 53514111-6beb-4844-812e-be971d886080' 
   
-  2. Seat finder.
+  2. Best available seat finder :
   
     curl -X POST http://localhost:2003/reservseats -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: bc921be1-5c43-44c6-af6d-5e782518cbd7' -d '{
 	"numberOfSeats": 10,
 	"email" :"prasad199.msc@gmail.com"}'
 
 
-  3. confirmSeat resrvation
+  3. conform seat resrvation :
 
     curl -X POST  http://localhost:2003/conformReservation -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 8dce3498-b7dd-43c9-bc71-4a8262525333' -d '{
 	"email" :"prasad199.msc@gmail.com"}'
@@ -55,6 +55,6 @@ Seat Assignment Order.
  7. Spring JPA and JPA repositories is used to interact the H2 database.
  8. in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
   
-this solution right now works using client email id as key. so at any given time one customer can hold only one request this can be replaced using session Id as key.
+this solution right now works using client email id as key, so at any given time one customer can hold only one request.this can be replaced using session Id as key.
 
 
