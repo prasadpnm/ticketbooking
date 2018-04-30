@@ -2,13 +2,7 @@
 
 Setup Instructions.
 
- 1 checkout the code and execute mvn clean install.
- 2 Setup database copy db file in your local home.  if you want to copy any other place,please change the spring boot properties   accordingly.
-
-
-Execution steps.
-
- 1. git clone https://github.com/prasadpnm/ticketbooking.git
+1. git clone https://github.com/prasadpnm/ticketbooking.git
  2. cd ticketbooking 
  3. mvn clean install
  4. update the src/main/resources/application.properties file 
