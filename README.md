@@ -60,7 +60,7 @@ Seat Assignment Order.
   3. confirmSeat resrvation
 
     curl -X POST  http://localhost:2003/conformReservation -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 8dce3498-b7dd-43c9-bc71-4a8262525333' -d '{
-	"email" :"prasad1.msc@gmail.com"}'
+	"email" :"prasad199.msc@gmail.com"}'
   
 
 
