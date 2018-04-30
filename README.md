@@ -32,7 +32,7 @@ Setup Instructions.
 
 
   3. conform seat resrvation :
-     execute the same email id as per the above step. this can be executed within 5 minutes after executing 2nd step
+      use the same email id used in 2nd step. this can be executed within 5 minutes after executing 2nd step
 
     curl -X POST  http://localhost:2003/conformReservation -H 'Accept: application/json' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 8dce3498-b7dd-43c9-bc71-4a8262525333' -d '{
 	"email" :"prasad199.msc@gmail.com"}'
@@ -56,6 +56,6 @@ Seat Assignment Order.
  7. Spring JPA and JPA repositories is used to interact the H2 database.
  8. in memory session handling implemented. right now it is hardcoded for 5 minutes. it can be changed.
   
-this solution right now works using client email id as key, so at any given time one customer can hold only one request.this can be replaced using session Id as key.
+this solution right now works using client email id as key,so at any given time one customer can hold only one request.this can be replaced using session Id as key.
 
 
