@@ -6,8 +6,16 @@ Setup Instructions.
  2 Setup database copy db file in your local home.  if you want to copy any other place,please change the spring boot properties   accordingly.
 
 
-Execution commands.
+Execution steps.
 
+  git clone https://github.com/prasadpnm/ticketbooking.git
+  cd ticketbooking
+  mvn clean install
+  
+install H2 database to explore the db backup  and setup  the 'ticketdb' from the back up file backup.
+zip in db folder. in proeprties file ticketdb configured in userhome you can change the location based on your preference.
+
+mvn spring-boot:run
 
 Seat Assignment Order.
 
