@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.prasad.ticketbooking.model.SeatHold;
 import com.prasad.ticketbooking.model.SeatReservationRequest;
 import com.prasad.ticketbooking.model.ConfirmRequest;
+import com.prasad.ticketbooking.model.ConfirmResponse;
 import com.prasad.ticketbooking.service.TicketService;
 
 @RestController
@@ -56,7 +57,8 @@ public class TicketRestController extends SpringBootServletInitializer {
 
 	@RequestMapping(value = "/conformReservation", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
-	public ResponseEntity<String> confirmReservation(@RequestBody ConfirmRequest confirmRequest) {
+	public ResponseEntity<ConfirmResponse> confirmReservation(@RequestBody ConfirmRequest confirmRequest) {
+		ConfirmResponse response=new ConfirmResponse();
 		String status = "success";
 		logger.debug("---Start-- getTotalAvlbleSeats---- ");
 		final HttpHeaders httpHeaders = new HttpHeaders();
@@ -65,7 +67,8 @@ public class TicketRestController extends SpringBootServletInitializer {
 		status = ticketService.reserveSeats(1, confirmRequest.getEmail());
 		logger.debug("API return Status.{}", status);
 		logger.debug("---End-- getTotalAvlbleSeats---- ");
-		return new ResponseEntity<String>(status, httpHeaders, HttpStatus.OK);
+		response.setStatus(status);
+		return new ResponseEntity<ConfirmResponse>(response, httpHeaders, HttpStatus.OK);
 	}
 
 }
