@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.prasad.ticketbooking.service.impl.SeatlayoutTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.73 s - in com.prasad.ticketbooking.service.impl.SeatlayoutTests
