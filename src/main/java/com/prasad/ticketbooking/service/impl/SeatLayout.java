@@ -24,8 +24,9 @@ public class SeatLayout {
 	public void setAvailableSeats(int availableSeats) {
 		this.availableSeats = availableSeats;
 	}
-
+	//this holds how many number of seats available in each row.
 	Map<Integer, Integer> rowAvailable = Collections.synchronizedMap( new HashMap<Integer, Integer>());
+	//this holds seat layout in each row.
 	Map<Integer, List<Boolean>> rowSeats = Collections.synchronizedMap(new HashMap<Integer, List<Boolean>>());
 
 	/**
