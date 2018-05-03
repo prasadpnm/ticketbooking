@@ -32,7 +32,7 @@ public class SessionHandler {
 		task.setEmail(seatHold.getCustomerEmail());
 		task.setTimer(timer);
 		task.setLayout(layout);
-		timer.schedule(task, 120 * 1000);
+		timer.schedule(task, 300 * 1000);
 		String sessionId=UUID.randomUUID().toString();
 		map.put(seatHold.getCustomerEmail(), seatHold);
 		timerMap.put(seatHold.getCustomerEmail(),timer);
